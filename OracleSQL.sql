@@ -33,3 +33,9 @@
 --12.alter table testdemo add name varchar(255) not null;
 --13.alter table testdemo drop constraint SYS_C007481;
 --13.alter table testdemo add constraint pk_testdemo primary key(ID,name);
+--14.alter table persons drop unique(PersonID);
+--15.alter table persons add primary key(PersonID);
+--16.create table orders(OrderID int not null, OrderDetails varchar(255), primary key(OrderID), PersonID int, foreign key(PersonID) references persons(PersonID));
+--16a.create table tasks(ID int not null primary key, TaskName varchar(255), PersonID int, Constraint FK_PersonTask foreign key(PersonID) references persons(PersonID));
+--17.alter table tasks drop constraint FK_PersonTask;
+--18.alter table tasks add constraint FK_PersonTask foreign key(PersonID) references persons(PersonID);
