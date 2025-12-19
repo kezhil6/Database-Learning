@@ -1,0 +1,15 @@
+--Database queries:
+--1.create database test;
+--2.drop database test;
+--3.backup database test to disk='D:\test.bak';
+--4.backup database test to disk='D:\test.bak' with differential; (backup latest changes only)
+--5.use test;
+
+--Table queries:
+--1.create table persons(PersonID int, LastName varchar(255), FirstName varchar(255), Address varchar(255), City varchar(255));
+--2.select PersonID,FirstName into specific_person_details from dbo.persons 
+--3.drop table persons;
+--4.truncate table persons;
+--5.alter table persons add phone varchar(255);
+--6.alter table persons drop column phone;
+--7.exec sp_rename 'persons.city', 'country', 'column';
