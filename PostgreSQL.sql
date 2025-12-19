@@ -28,3 +28,9 @@
 --6.alter table datas add constraint uc_multiple unique(DataID,DataDetails);
 --7.alter table datas drop constraint uc_multiple;
 --8.create table record(id int not null primary key);
+--9.create table demos(ID int not null, Code varchar(255), name varchar(255), constraint PK_Demo primary key(ID,Code));
+--10.create table testdemo(ID int not null);
+--11.alter table testdemo add primary key (ID);
+--12.alter table testdemo add name varchar(255) not null;
+--13.alter table testdemo drop constraint testdemo_pkey;
+--13.alter table testdemo add constraint pk_testdemo primary key(ID,name);
