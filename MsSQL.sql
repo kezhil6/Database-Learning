@@ -10,6 +10,8 @@
 --2.select PersonID,FirstName into specific_person_details from dbo.persons 
 --3.drop table persons;
 --4.truncate table persons;
---5.alter table persons add phone varchar(255);
---6.alter table persons drop column phone;
---7.exec sp_rename 'persons.city', 'country', 'column';
+
+--Table column queries:
+--1.alter table persons add phone varchar(255);
+--2.alter table persons drop column phone;
+--3.exec sp_rename 'persons.city', 'country', 'column';

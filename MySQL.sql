@@ -10,6 +10,8 @@
 --2.create table specific_person_details as select PersonID,FirstName from persons 
 --3.drop table persons;
 --4.truncate table persons;
---5.alter table persons add phone varchar(255);
---6.alter table persons drop column phone;
---7.alter table persons rename column city to country;
+
+--Table column queries:
+--1.alter table persons add phone varchar(255);
+--2.alter table persons drop column phone;
+--3.alter table persons rename column city to country;
