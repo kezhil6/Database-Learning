@@ -39,3 +39,6 @@
 --16.create table tasks(ID int not null primary key, TaskName varchar(255), PersonID int, Constraint FK_PersonTask foreign key(PersonID) references persons(PersonID));
 --17.alter table tasks drop constraint FK_PersonTask;
 --18.alter table tasks add constraint FK_PersonTask foreign key(PersonID) references persons(PersonID);
+--19.create table citydata(ID int not null primary key, CandidatesName varchar(255), Age int, City varchar(255), constraint chk_citydata check((Age >= 18) and City ='Salem'));
+--20.alter table citydata add constraint chk_citydatacandidate check(CandidatesName = 'Ezhil');
+--21.alter table citydata drop constraint chk_citydatacandidate;
