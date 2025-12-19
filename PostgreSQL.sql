@@ -18,3 +18,13 @@
 
 --Table column datatype queries:
 --1.alter table persons alter column address type text;
+
+--Constraints
+--1.create table persons(PersonID int not null, LastName varchar(255) not null, FirstName varchar(255) not null, Address varchar(255), City varchar(255));
+--2.alter table persons alter column address set not null;
+--3.create table data(DataID int not null unique);
+--4.create table datas(DataID int not null, DataDetails varchar(255) not null, constraint UC_Data unique(DataID,DataDetails));
+--5.alter table persons add unique(PersonID);
+--6.alter table datas add constraint uc_multiple unique(DataID,DataDetails);
+--7.alter table datas drop constraint uc_multiple;
+--8.create table record(id int not null primary key);
