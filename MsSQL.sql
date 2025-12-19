@@ -15,3 +15,6 @@
 --1.alter table persons add phone varchar(255);
 --2.alter table persons drop column phone;
 --3.exec sp_rename 'persons.city', 'country', 'column';
+
+--Table column datatype queries:
+--1.alter table persons alter column address varchar(max);

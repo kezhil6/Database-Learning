@@ -15,3 +15,5 @@
 --2.alter table persons drop column phone;
 --3.alter table persons rename column city to country;
 
+--Table column datatype queries:
+--1.alter table persons modify address varchar2(4000);
