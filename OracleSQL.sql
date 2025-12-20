@@ -42,3 +42,7 @@
 --19.create table citydata(ID int not null primary key, CandidatesName varchar(255), Age int, City varchar(255), constraint chk_citydata check((Age >= 18) and City ='Salem'));
 --20.alter table citydata add constraint chk_citydatacandidate check(CandidatesName = 'Ezhil');
 --21.alter table citydata drop constraint chk_citydatacandidate;
+--22.create table employees(ID int primary key, IsActive number(1) default 1, CreatedAt timestamp default systimestamp);
+--23.alter table employees modify CreatedAt default null;
+--24.create index idx_pnames on persons (LastName,FirstName);
+--25.drop index idx_pnames;
