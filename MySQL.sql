@@ -46,3 +46,4 @@
 --23.alter table employees alter column CreatedAt drop default;
 --24.create index idx_pnames on persons (LastName,FirstName);
 --25.drop index idx_pnames on persons
+--26.create table records(ID int primary key auto_increment, RecordName varchar(255));

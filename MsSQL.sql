@@ -46,3 +46,4 @@
 --23.alter table employees drop constraint df_check_active;
 --24.create index idx_pnames on persons (LastName,FirstName);
 --25.drop index idx_pnames on persons
+--26.create table records(ID int identity(1,1) primary key, RecordName varchar(max));

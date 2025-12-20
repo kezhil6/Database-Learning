@@ -46,3 +46,4 @@
 --23.alter table employees modify CreatedAt default null;
 --24.create index idx_pnames on persons (LastName,FirstName);
 --25.drop index idx_pnames;
+--26.create table records(ID int generated always as identity primary key, RecordName varchar(255));
