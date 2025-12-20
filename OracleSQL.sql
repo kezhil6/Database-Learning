@@ -47,3 +47,5 @@
 --24.create index idx_pnames on persons (LastName,FirstName);
 --25.drop index idx_pnames;
 --26.create table records(ID int generated always as identity primary key, RecordName varchar(255));
+--27.create view records_view as (select id from records);
+--28.drop view records_view;
